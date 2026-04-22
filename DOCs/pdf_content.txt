@@ -1,0 +1,639 @@
+
+--- Page 1 ---
+ 
+ 1  
+2.2. Contenido de la Licencia Médica Electrónica.  
+El contenido de la Licencia Médica Electrónica es el mismo que el de la licencia médica en formulario de papel. Las 
+denominadas “secciones” del formulario de papel, en el documento electrónico corresponden o se manifiestan en 
+“zonas”, según se detalla en el siguiente punto.  
+ 
+2.2.1. Zonas de la Licencia M édica Electrónica.  
+  
+0   Zona de identificación única de la licencia médica electrónica: Se indica su tipo, el folio asignado , el estado de la 
+licencia médica electrónica , junto a otros antecedentes de su emisión y tramitación .  
+  
+A Zona de uso y responsabi lidad exclusiva del profesional: El profesional debe completar, únicamente la sección A 
+del formulario. Entre los antecedentes que debe consignar el profesional que la emite se encuentran:  
+A.1 Identificación del trabajador: Identificación del trabajador o tra bajadora (nombre completo, rut, edad y sexo); 
+fecha de emisión de la licencia; fecha de inicio del reposo; días de duración de la licencia en números y en 
+palabras.   
+A.2 Identificación del hijo: Identificación del hijo, en caso de la licencia médica por enfer medad grave del hijo 
+menor de un año y post natales (nombre completo, fecha de nacimiento y rut).  
+A.3 Tipo de licencia: Las licencias médicas pueden ser otorgadas por alguna de las siguientes causas específicas:  
+(1) Enfermedad o accidente común  
+(2) Prórroga medicina preventiva  
+(3) Licencia maternal pre y postnatal  
+(4) Enfermedad grave del hijo menor de un año  
+(5) Accidente del trabajo o del trayecto  
+(6) Enfermedad profesional  
+(7) Patología del embarazo  
+Además se debe especificar la recuperabilidad de la capacidad para trabajar, circunstancia de haberse 
+iniciado trámite de invalidez, indicar si se trata de un accidente del trayecto o no, fecha y hora del 
+accidente del trabajo o del trayecto y fecha de la concepción para licencias tipo 3 y 7.  
+A.4 Características del rep oso: según sea total o parcial y, en el último caso, si es de mañana, tarde o noche. 
+Además se debe especificar el lugar de reposo, indicando que se deberá cumplir en su domicilio, hospital u 
+otro domicilio y, en este último caso, el motivo del cambio de d omicilio de reposo, su dirección y teléfono, 
+incluyendo teléfono de contacto.   
+A.5 Identificación del profesional: Identificación completa del profesional otorgante, especificando datos 
+personales y especialidad.   
+A.6 Diagnóstico principal: Diagnóstico principal  y otros diagnósticos incluyendo los antecedentes clínicos y 
+exámenes de apoyo al diagnóstico (fecha de la intervención quirúrgica u otros procedimientos, 
+complicaciones de las patologías, entre otros).   
+A.7 A.F  Firmas del profesional y del Trabajador.  
+  
+B Zona de uso exclusivo de Servicio de Salud o Isapre: La institución debe completar, únicamente la sección B del 
+formulario. Entre los antecedentes que debe consignar se encuentra el nombre del Servicio de Salud o Isapre, el Nº 
+de la resolución, el nombre del  establecimiento, el código del establecimiento, el tipo de licencia médica según la 
+entidad contralora y toda la información de un posible nuevo dictamen respecto de la licencia primeramente 
+otorgada por el profesional.  
+B.F  Firma del médico autorizado p or el servicio de salud o ISAPRE.  
+  
+  
+C Zona de responsabilidad exclusiva del empleador. El empleador deberá completar, únicamente la sección C del 
+formulario. Entre los antecedentes que debe consignar se encuentran:  
+C.1 Identificación del empleador o trabajador independiente: Identificación completa respecto de la razón social 
+de la entidad empleadora o nombre del trabajador independiente, run, teléfono, fecha de recepción de la 
+licencia, dirección donde cumple funciones el Trabajador , la actividad y ocupación del trabajador y en caso 
+de que la institución presente la licencia en una Caja de Compensación de Asignación Familiar (CCAF) se 
+debe indicar la fecha en que esto se realiza.  
+--- Page 2 ---
+ 
+ 2 C.2 Identificación del régimen previsional del trabajador y entidad pagadora de subsidio.  
+C.3 Informe de remuneraciones rentas y/o subsidios: Información de remuneraciones de meses anteriores a la 
+fecha de incapacidad distinguiendo los casos de las licencias maternales e indicando el porcentaje de 
+desahucio.  
+C.4 Licencias anteriores en los últimos 6 meses: Información de licencias médicas emitidas con anterioridad.  
+C.F  Firma del Empleador o Trabajador Independiente.  
+ 
+2.2.2. Datos de la Licencia Médica Electrónica.   
+Los datos que conforman la Licencia Médica Electrónica se especifican en una tabla, donde cada columna señala lo 
+siguiente:  
+  
+a) Glosa:  Nombre del elemento del documento electrónico.  
+b) Descripción:  Explicación comprensiva del elemento.  
+c) Tag:  Nombre del tag en el documento electrónico del <elemento> o “atributo”.  
+d) Tipo:  Tipo de dato que puede tomar el valor del campo. Estos pueden ser:  
+i) Alfanumérico (String), algunos caracteres como ‘&’ y ‘<’ deben ser reemplazados por la secuencia de 
+escape q ue el estándar que se utilizará define para dichos caracteres.  
+ii) Numérico (Integer), no debe incluirse separador de miles.  
+iii) Decimal (decimal), los decimales se separan con punto y se indican sólo cuando el valor que se desea 
+incluir contiene decimales signi ficativos.  
+iv) Fecha (Date), tipo de dato estándar en formato AAAA -MM-DD.  
+v) v) Hora (Time), tipo de dato estándar en formato HH:MM:SS.  
+vi) Fecha Hora (DateTime), tipo de dato estándar en formato AAAA -MM-DDTHH:MM:SS. vii)  STXXX, 
+tipos simples definidos a parti r de tipos de datos estándares.  
+viii) CTXXX, tipos complejos definidos a partir de tipos de datos estándares.  
+e) Validación:  Validación realizada en el tipo de dato definido.  
+f) I: Código de impresión del campo. Si el código es I, el campo debe ser impreso. L a impresión de un dato no 
+debe necesariamente ser igual al formato que se especifica en el presente documento. Como ejemplo, una 
+fecha no tiene necesariamente que estar en el formato AAAA -MM-DD, sino que puede ser impresa con el 
+mes en letras o cambiando e l orden en que aparecen el año, el mes y día, de manera de facilitar su lectura. 
+Adicionalmente, se puede optar porque un dato que es obligatorio imprimir, esté preimpreso. Si el código es 
+N, no es obligatorio que el campo sea impreso en el documento.  
+g) O: Código de obligatoriedad. Si el código es 1, el dato es obligatorio. El dato debe estar en el documento 
+siempre, independiente de las características de la transacción. Si el código es 2, el dato es condicional. El 
+dato no es obligatorio en todos los docum entos, pero pasa a ser obligatorio en determinadas operaciones si 
+se cumple una cierta condición que emana del propio formulario. Si el código es 3, el dato es opcional.  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 3 ---
+ 
+ 3 ZONA 0  
+IDENTIFICACION DE LA LICENCIA MEDICA ELECTRONICA  
+  
+    INFORMACIÓN DE LA LICENCIA Y BITACORA DE ESTADOS  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+1 Folio Licencia  Folio de la licencia médica electrónica  <id_licencia>  STRut  ALGORITMO MODULO 11  I 1 
+2 RUT Operador  RUT del Operador de LME  <rut_operador>  STRut  ALGORITMO MODULO 11  N 1 
+3 Tipo de formulario  Tipo de formulario de la licencia médica 
+electrónica  <codigo_tipo_formulario>  STTipo_formulario  1: PRESTADOR INSTITUCIONAL  
+2: PRESTADOR INDIVIDUAL  
+3: LICENCIA MEDICA ELECTRONICA  I 1 
+4 Empleador 
+Adscrito  Indicación si el empleador se enceuntra 
+adscrito o no  <empleador_adscrito>  STSiNo    N 1 
+5 Codigo Entidad  Código de la entidad que tramita  <codigo_entidad>  STCodigo_entidad    N 1 
+6 Código Operador  Código del Operador de LME  <codigo_operador>  STCodigoOperador    N 1 
+7 Estado de la 
+Licencia  Estado de tramitación de la licencia 
+médica  
+<estado>  CTEstado    N 1 
+8 Fecha Estado  Fecha y hora en la que cambió de estado 
+la licencia médica    N 1 
+9 Motivo no 
+recepción  Motivo de no recepción de la licencia 
+médica electrónica por parte del 
+empleador  1: INEXISTENCIA DE RELACIÓN LABORAL.  
+2: RELACIÓN LABORAL TERMINADA  
+3: TRABAJADOR CON PERMISO SIN GOCE DE 
+SUELDO.  
+4: TRABAJADOR SECTOR PÚBLICO CON 
+FERIADO LEGAL.  
+5: OTRAS RAZONES  N 3 
+10 Fecha término 
+relación  Fecha en la que se terminó la relación 
+laboral con el trabajador    N 2 
+11 Rut empleador  Rut del empleador    N 3 
+12 Código de 
+tramitación CCAF  Código de tramitación de LME asociados 
+a una CCAF    N 3 
+13 Motivo de 
+devolución CCAF  Códigos de motivos de devolución de 
+LME por parte de CCAF, Isapres o 
+FONASA    N 3 
+14 Motivo de 
+devolución (otro)  Campo de texto libre utilizado por CCAF 
+o FONASA    N 3 
+15 Tipo de 
+liquidación CCAF  Código de tipos de liquidación por parte 
+de la CCAF    N 3 
+16 Cantidad de 
+licencias emitidas  Indica el número de licencias emitidas 
+para el mismo trabajador en conjunto a la 
+actual.    N 3 
+        
+  A.F FIRMA DE OPERADOR  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+17 Firma de 
+Operador  Firma digital (PKI ) del Operador de 
+LME  <firma>  CTFirma    N 1 
+--- Page 4 ---
+ 
+ 4 ZONA A  
+USO Y RESPONSABILIDAD EXCLUSIVA DEL PROFESIONAL   
+  A.1 IDENTIFICACION DEL TRABAJADOR  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+18 Apellido Paterno  Apellido paterno del trabajador  
+<trabajador>  CTPersona    I 1 
+19 Apellido Materno  Apellido materno del trabajador    I 1 
+20 Nombres  Nombres del trabajador    I 1 
+21 RUT  RUT del trabajador    I 1 
+22 Edad  Edad del trabajador    I 1 
+23 Sexo Sexo del trabajador    I 1 
+24 Fecha Emisión 
+Licencia  Fecha en que es emitida la licencia médica  <fecha_emision>  DateTime    I 1 
+25 Fecha Inicio Reposo  Fecha en la que el trabajador Inicia reposo  <fecha_inicio_reposo>  DateTime    I 1 
+26 Nº de Días  Nº de días de reposo  <tra_ndias>  Integer    I 1 
+27 Nº de Días en 
+palabras  Nº de días de reposo en palabras  <tra_ndias_palabras>  String    I 1 
+ 
+  A.2 IDENTIFICACION DEL HIJO  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+28 Apellido Paterno  Apellido paterno del hijo  
+<hijo>  CTPersona    I 3 
+29 Apellido  Materno  Apellido materno del hijo    I 3 
+30 Nombres  Nombres del hijo    I 3 
+31 RUT  RUT del hijo    I 2 
+32 Fecha de Nacimiento  Fecha de nacimiento del hijo    I 2  
+  A.3 TIPO DE LICENCIA  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+33 Tipo de licencia  Tipo de licencia  <codigo_tipo_licencia>  STTipo_licencia  1: ENFERMEDAD O ACCIDENTE 
+COMUN  
+2: PRORROGA MEDICINA 
+PREVENTIVA  
+3: LICENCIA MATERNAL PRE Y 
+POST NATAL  
+4: ENFERMEDAD GRAVE DE 
+HIJO MENOR DE 1 AÑO  
+5: ACCIDENTE DEL TRABAJO O 
+DEL TRAYECTO  
+6: ENF ERMEDAD PROFESIONAL  
+7: PATOLOGIA DEL EMBARAZO  I 1 
+34 Recuperabilidad 
+laboral  Recuperabilidad laboral  <codigo_recuperabilidad>  STSiNo  1: SI 
+2: NO  I 1 
+35 Inicio trámite de 
+invalidez  Inicio trámite de invalidez  <codigo_inicio_tram_inv>  STSiNo  1: SI 
+2: NO  I 1 
+--- Page 5 ---
+ 
+ 5 36 Fecha del accidente  Fecha del accidente del trabajo o del 
+trayecto  <fecha_accidente>  DateTime    I 2 
+37 Trayecto  Accidente en el trayecto  <codigo_trayecto>  STSiNo  1: SI 
+2: NO  I 2 
+38 Fecha de concepción  Fecha de la concepción del accidente  <fecha_concepcion>  Date    I 2  
+  A.4 CARACTERISTICAS DEL REPOSO  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+39 Reposo total o parcial  Reposo laboral total o parcial  <codigo_tipo_reposo>  STTipo_reposo  1: REPOSO LABORAL TOTAL  
+2: REPOSO LABORAL PARCIAL  I 1 
+40 Jornada de reposo  Jornada del reposo  <codigo_jornada_reposo>  STJornada_reposo  A: MAÑANA  
+B: TARDE  
+C: NOCHE  I 2 
+41 Lugar de reposo  Lugar de reposo. Contiene información 
+del lugar de reposo, dirección y 
+justificación.  <codigo_lugar_reposo>  STLugar_reposo    I 1 
+42 Teléfono  Teléfono personal o de contacto.  <telefono_reposo>  CTTelefono    I 3  
+  A.5 IDENTIFICACION DEL PROFESIONAL  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+43 Apellido Paterno  Apellido paterno del profesional  
+<profesional>  CTPersona    I 1 
+44 Apellido Materno  Apellido materno del profesional    I 1 
+45 Nombres  Nombres del profesional    I 1 
+46 RUT  RUT del profesional    I 1 
+47 Especialidad  Especialidad de profesional  <prof_especialidad>  String    I 1 
+48 Tipo de Profesional  Tipo de profesional que puede emitir 
+licencias médicas  <codigo_tipo_profesional>  STTipo_profesional  1: MEDICO; 2: DENTISTA; 3: 
+MATRONA  I 1 
+49 Registro colegio  Registro del colegio profesional  <prof_registro_colegio>  String    I 3 
+50 Correo electrónico  Correo electrónico  <prof_email>  STEmail    I 3 
+51 Teléfono  Teléfono de oficina de atención del 
+profesional  <prof_telefono>  CTTelefono    I 3 
+52 Dirección  Dirección de oficina de atención del 
+profesional  <prof_direccion>  CTDireccion    I 1 
+53 Fax Fax de oficina de atención del profesional  <prof_fax>  CTTelefono    I 3  
+  A.6 DIAGNOSTICO   
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+54 Diagnóstico principal  Diagnóstico principal  <diagnostico_principal>  String    I 1 
+55 Otros diagnósticos  Otros diagnósticos  <diagnostico_otro>  String    I 3 
+56 Antecedentes clínicos  Antecedentes clínicos  <antecedentes_clinicos>  String    I 3 
+57 Exámenes de apoyo  Exámenes de apoyo al diagnóstico  <examenes_apoyo>  String    I 3         
+  A.C INFORMACIÓN COMPLEMENTARIA  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+--- Page 6 ---
+ 
+ 6 58 Código diagnostico 
+principal  Código de diagnostico principal  <coddiagnostico_principal>  String    N 1 
+59 diagnostico secundario  Diagnsotico secundario  <diagnostico_secundario>  String    N 3 
+60 Código diagnostico 
+secundario  Código de diagnostico secundario  <coddiagnostico_secundario>  String    N 3 
+61 Otros diagnosticos  Otros diagnósticos  <coddiagnostico_otro>  String    N 3 
+62 Correo electronico 
+trabajador  Correo electronico del trabajador  <email_trabajador>  STEmail    N 3 
+63 Canal de contacto  Forma de contacto con el trabajador  <canal_contacto>  STContacto  1: EMAIL; 2: CELULAR; 3: 
+DIRECCION  N 3 
+64 Telefono celular  Telefono celular del trabajador  <celular_contacto>  Integer    N 3 
+65 Dirección  Dirección del trabajador  <direccion_contacto>  CTDireccion    N 3  
+  A.F FIRMAS DEL PROFESIONAL QUE OTORGA LA LICENCIA MEDICA Y DEL TRABAJADOR  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+66 Firma Profesional  Firma digital (PKI / Huella ) del 
+profesional  <firma>  CTFirma    N 1 
+67 Firma Trabajador  Firma digital (PKI / Huella ) del 
+trabajador  <firma>  CTFirma    N 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 7 ---
+ 
+ 7 ZONA B  
+USO EXCLUSIVO SERVICIO DE SALUD O ISAPRE  
+  
+  B.1 INFORMACION DEL PRONUNCIAMIENTO  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+68 Tipo de Pronunciamiento  Tipo de Pronunciamiento por 
+parte de la entidad que se 
+pronuncia  “tipo_pronunciamiento”  STTipo_pronunciamiento  1:PRONUNCIAMIENTO INICIAL  
+2: RECONSIDERACION  
+3: REDICTAMEN  I 1 
+69 Tipo pendiente  Código del motivo por el cual se 
+encuentra pendiente de 
+pronunciamiento  "tipo_pendiente"  STTipo_pendiente  1: PENDIENTE POR PERITAJE  
+2: PENDIENTE POR ANTECEDENTES 
+MEDICOS  
+3: PENDIENTE POR FISCALIZACION 
+DOMICILIARIA  
+4: PENDIENTE POR FISCALIZACION 
+EMPRESA  N 3 
+70 Servicio de Salud o Isapre  Servicio de Salud o Isapre  <entidad>  String    I 1 
+71 Nº Resolución  Nº de la resolución  <n_resolucion>  STN_resolucion    I 1 
+72 Establecimiento  Nombre del establecimiento  <establecimiento>  String    I 1 
+73 Código establecimiento  Código del establecimiento  <codigo_establecimiento>  Integer    I 1 
+74 Tipo de licencia  Tipo de licencia médica  <codigo_tipo_licencia_entidad>  STTipo_licencia  1: ENFERMEDAD O ACCIDENTE COMUN  
+2: PRORROGA MEDICINA PREVENTIVA  
+3: LICENCIA MATERNAL PRE Y POST 
+NATAL  
+4: ENFERMEDAD GRAVE DE HIJO MENOR 
+DE 1 AÑO  
+5: ACCIDENTE DEL TRABAJO O DEL 
+TRAYECTO  
+6: ENFERMEDAD PROFESIONAL  
+7: PATOLOGIA DEL EMBARAZO  I 1 
+75 Fecha inicio  Fecha desde que parte la licencia  <entidad_fecha_desde>  Datetime    I 1 
+76 Fecha fin  Fecha en la que termina la licencia  <entidad_fecha_hasta>  DateTime    I 1 
+77 Nº días autorizados  Nº de días de reposo autorizados  <entidad_ndias>  Integer    I 1 
+78 Código diagnóstico  Código del diagnóstico  <codigo_diagnostico>  String    I 1 
+79 Continuación  Primera licencia o continuación de 
+otra <codigo_contiuacion>  STContinuacion  1: PRIMERA  
+2: CONTINUACION  I 1 
+80 Nº días previos  Nº días de licencia previa  <dias_previos>  Integer    I 2 
+81 Tipo de resolución  Tipo de resolución  <codigo_tipo_resolucion>  STTipo_resolucion  1: AUTORIZASE  
+2: RECHAZASE  
+3: AMPLIASE  
+4: REDUCESE  
+5: PENDIENTE DE RESOLUCION  I 1 
+--- Page 8 ---
+ 
+ 8 82 Pendiente  Causa por la cual la licencia queda 
+pendiente  <entidad_pendiente>  String    I 2 
+83 Redictamen  Redictamen  <codigo_redictamen>  StSiNo  1: SI 
+2: NO 1 2 
+84 Causa de rechazo  Causa de rechazo  <codigo_causa_rechazo>  STCausa_rechazo  1: REPOSO INJUSTIFICADO  
+2: DIAGNOSTICO IRRECUPERABLE  
+3: FUERA DE PLAZO  
+4: INCUMPLIMIENTO REPOSO  
+5: OTRO  I 2 
+85 Causa de modificación o 
+rechazo  Causa de modificación o rechazo 
+de la licencia  <entidad_causa>  String    I 2 
+86 Reposo autorizado  Tipo de reposo autorizado  <codigo_reposo_autorizado>  STTipo_reposo  1: REPOSO LABORAL TOTAL  
+2:REPOSO LABORAL PARCIAL  I 1 
+87 Jornada de reposo  Jornada de reposo  <codigo_jornada_reposo_autorizado>  STJornada_reposo  A: MAÑANA  
+B: TARDE  
+C: NOCHE  I 2 
+88 Derecho a subsidio  Tipo de derecho a subsidio  <codigo_derecho_subsidio>  STTipo_subsidio  A: CON DERECHO A SUBSIDIO UNA VEZ 
+VERIFICADOS LOS REQUISITOS 
+DISPUESTOS EN EL D.F.L. Nº 44/78 Y LEY 
+Nº 16744  
+B: CON DERECHO A SUBSIDIO DE CARGO 
+DEL EMPLEADOR O ENTIDAD 
+RESPONSABLE ART. 56 DS Nº 3/84  
+C: SIN DERECHO A SUBSIDIO  I 1 
+89 Fecha de recepción  Fecha de recepción en el Servicio 
+de Salud o Isapre  <entidad_fecha_recepcion>  Datetime    I 1 
+90 Fecha de resolución  Fecha de resolución por parte del 
+Servicio de Salud o Isapre  <fecha_resolucion>  Datetime    I 1 
+91 Fecha de redictamen  Fecha de redictamen  <fecha_redictamen>  Datetime    I 2 
+92 Identificación del contralor  Nombres y apellidos del médico 
+autorizado por el Servicio de Salud 
+o Isapre  <contralor_nombre>  String    I 1 
+93 RUT del médico contralor  RUT del médico autorizado por el 
+Servicio de Salud o Isapre  <contralor_rut>  STRut    I 1 
+94 Registro colegio médico  Registro colegio médico del 
+médico autorizado por el Servicio 
+de Salud o Isapre  <contralor_registro_colegio>  String    I 3 
+ 
+  B.F FIRMA DEL MEDICO AUTORIZADO POR EL SERVICIO DE SALUD O ISAPRE  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+95 Firma Asegurador  Firma Digital (PKI / Huella)  <firma>  CTFirma    N 1 
+ 
+ 
+--- Page 9 ---
+ 
+ 9 ZONA C  
+RESPONSABILIDAD EXCLUSIVA DEL EMPLEADOR  
+  
+  C.1 IDENTIFICACION DEL EMPLEADOR O TRABAJADOR INDEPENDIENTE  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+96 Razón social  Razón social del empleador o 
+nombre del trabajador 
+independiente  <emp_nombre>  String    I 1 
+97 RUT  RUT del empleador o 
+trabajador independiente  <emp_rut>  STRut    I 1 
+98 Teléfono  Teléfono del empleador o 
+trabajador independiente  <emp_telefono>  CTTelefono    I 1 
+99 Fecha recepción  Fecha de recepción de licencia 
+por el empleador o trabajador 
+independiente  <emp_fecha_recepcion>  Datetime    I 1 
+100 Dirección  Dirección donde cumple 
+funcionales el trabajador  <emp_direccion>  CTDireccion    I 1 
+101 Código comuna  Código comunal uso 
+COMPIN  <codigo_comuna_compin>  Integer    I 2 
+102 Actividad laboral  Actividad laboral del 
+trabajador  <codigo_actividad_laboral>  STActividad_laboral  0: AGRICULTURA, SERVICIOS AGRICOLAS, 
+SILVICULTURA Y PESCA  
+1: MINAS, PETROLEOS Y CANTERAS  
+2: INDUSTRIAS MANUFACTURERAS  
+3: CONSTRUCCIÓN  
+4: ELECTRICIDAD, GAS Y AGUA  
+5: COMERCIO  
+6: TRANSPORTE, ALMACENAMIENTO Y 
+COMUNICACIONES  
+7: FINANZAS, SEGUROS BIENES MUEBLES Y 
+SERVICIOS TECNICOS, PROFESIONALES Y 
+OTROS  
+8: SERVICIOS ESTATALES, SOCIALES, 
+PERSONALES E INTERNACION ALES  
+9: ACTIVIDAD NO ESPECIFICADA  I 1 
+103 Ocupación  Ocupación  <codigo_ocupacion>  STOcupacion  11: EJECUTIVO O DIRECTIVO  
+12: PROFESOR  
+13: OTRO PROFESIONAL  
+14: TÉCNICO  
+15: VENDEDOR  
+16: ADMINISTRATIVO  
+17: OPERARIO, TRABAJADOR MANUAL  
+18: TRABAJADOR DE CASA PARTICULAR  
+19: OTRO  I 1 
+104 Otra ocupación  Especificación de la ocupación  <emp_otra_ocupacion>  String    I 2 
+ 
+ 
+--- Page 10 ---
+ 
+ 10  
+ 
+  C.2 IDENTIFICACION DEL REGIMEN PREVISIONAL DEL TRABAJADOR Y ENTIDAD PAGADORA DEL SUBSIDIO  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+105 Fecha recepción  Fecha de recepción de licencia 
+por la Caja de Compensación 
+de Asignación Familiar 
+(CCAF)  <prev_fecha_recepcion_ccaf>  Datetime    I 2 
+106 Tipo régimen 
+previsional  Tipo de régimen previsional  <codigo_tipo_regimen_previsional>  STRegimen_previsional  1: D.L. 2501 INP  
+2: D.L. 3500 AFP  I 1 
+107 Código régimen 
+previsional  Código de régimen previsional  <codigo_regimen_previsional>  String    I 1 
+108 Letra caja previsión  Letra de caja de previsión  <codigo_letra_caja>  String    I 2 
+109 Nombre previsión  Nombre de institución 
+previsional  <prev_nombre>  String    I 1 
+110 Calidad del 
+trabajador  Calidad de trabajador  <codigo_calidad_trabajador>  STCalidad_trabajador  1: TRABAJADOR SECTOR PUBLICO 
+AFECTO A LEY 18.834  
+2: TRABAJADOR SECTOR PÚBLICO NO 
+AFECTO A LEY 18.834  
+3: TRABAJADOR DEPENDIENTE 
+SECTOR PRIVADO  
+4: TRABAJADOR INDEPENDIENTE.  I 1 
+111 Seguro de desempleo 
+AFC  Seguro de desempleo 
+trabajador afiliado a AFC  <codigo_seguro_afc>  STSiNo  1: SI 
+2: NO  I 2 
+112 Seguro de desempleo 
+indefinido  Seguro de desempleo 
+trabajador con contrato de 
+duración indefinida  <codigo_seguro_indef>  STSiNo  1: SI 
+2: NO  I 2 
+113 Fecha afiliación  Fecha primera afiliación a 
+entidad previsional  <fecha_afiliacion>  Date    I 1 
+114 Fecha contrato  Fecha de contrato de trabajo  <fecha_contrato>  Date    I 1 
+115 Entidad pagadora  Entidad que debe pagar el 
+subsidio o mantener la 
+remuneración  <codigo_entidad_pagadora>  STEntidad_pagadora  A: SERVICIO DE SALUD  
+B: ISAPRE  
+C: CCAF  
+D: EMPLEADOR  
+E: SERVICIO DE SALUD  
+F: MUTUAL  
+G: INP  
+H: EMPLEADOR  I 2 
+116 Nombre pagador  Nombre de entidad pagadora 
+de subsidio  <prev_nombre_pagador>  String    I 1 
+ 
+ 
+--- Page 11 ---
+ 
+ 11   C.3 INFORME DE REMUNERACIONES RENTAS Y/O SUBSIDIOS  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+117 Código previsión  Código institución previsional  
+<remuneracion>  CTRemuneracion  MAXIMO 12 REPETICIONES  I 1 
+118 Mes remuneraciones  Mes al cual corresponden las 
+remuneraciones  I 1 
+119 Año remuneraciones  Año al cual corresponden las 
+remuneraciones  I 1 
+120 Nº  días 
+remuneraciones  Nº de días a remunerar  I 1 
+121 Monto Imponible  Monto Imponible desahucio 
+para trabajadores 
+corporaciones municipales y 
+públicos  I 1 
+122 Monto total  Monto total de 
+remuneraciones imponibles 
+para pensiones y salud (tope 
+60 UF)  I 1 
+123 Monto incapacidad  
+laboral  Monto subsidio por 
+incapacidad laboral  I 2 
+124 N° días incapacidad 
+laboral  Nº de días de subsidio por 
+incapacidad laboral  I 2 
+125 % de desahucio  % de desahucio  <porcen_desahucio>  Decimal    I 1 
+126 Monto mes anterior  Monto imponible del mes 
+anterior al inicio de la licencia 
+médica  <monto_imponible_mes_anterior>  Integer    I 1 
+ 
+  C.4 LICENCIAS ANTERIORES EN LOS ULTIMOS 6 MESES  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+127 Licencias anteriores  Licencias anteriores  <lma_nlicencias>  STSiNo  1: SI 
+2: NO  I 1 
+128 Total de días  Total de días  
+<licencia_anterior>  CTLicencia_anterior  MAXIMO 12 REPETICIONES  I 2 
+129 Fecha inicio licencia 
+anterior  Fecha de inicio de la licencia 
+médica anterior  I 2 
+130 Fecha fin licencia 
+anterior  Fecha de término de la licencia 
+médica anterior  I 2 
+        
+  C.C INFORMACIÓN COMPLEMENTARIA  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+131 Código de 
+tramitación CCAF  Código de la CCAF o 
+FONASA  <codigo_tramitacion_CCAF>  STCodigoCCAF    N 1 
+--- Page 12 ---
+ 
+ 12 132 Más de 100 
+trabajadores  Indica si el empleador tiene 
+más de 100 trabajadores o no  <tiene_mas100>  STSiNo    N 3 
+133 Haberes  Detalle de los haberes  <haberes>  CTHaberes    N 1 
+134 Run del Hijo  RUN del hijo, si corresponde  <run_hijo>  STRut    N 3 
+ 
+  C.F FIRMA DEL EMPLEADOR O TRABAJADOR INDEPENDIENTE  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+135 Firma Empleador  Datos Zona C cifrados con 
+llave privada del operador  <firma>  CTFirma    N 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 13 ---
+ 
+ 13 ZONA D  
+USO Y RESPONSABILIDAD EXCLUSIVA DE LA ENTIDAD PAGADORA  
+  
+  D.1 REMUNERACIONES Y LIQUIDACION  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+136 Código previsión  Código institución previsional  
+<remuneracion>  CTRemuneracion  MAXIMO 12 
+REPETICIONES  N 1 
+137 Mes remuneraciones  Mes al cual corresponden las remuneraciones  N 1 
+138 Año remuneraciones  Año al cual corresponden las remuneraciones  N 1 
+139 Nº  días remuneraciones  Nº de días a remunerar  N 1 
+140 Monto Imponible  Monto Imponible desahucio para trabajadores 
+corporaciones municipales y públicos  N 1 
+141 Monto total  Monto total de remuneraciones imponibles para 
+pensiones y salud (tope 60 UF)  N 1 
+142 Monto incapacidad laboral  Monto subsidio por incapacidad laboral  N 2 
+143 N° días incapacidad laboral  Nº de días de subsidio por incapacidad laboral  N 2 
+144 Periodo de la renta  Año y mes de la renta  
+<liquidación>  CTLiquidacion    N 1 
+145 Monto del subsidio diario  Valor del subsidio diario calculado  N 3 
+146 Monto de cotización de pensión  Valor de la cotización para Fondo de Pensiones  N 3 
+147 Monto de cotización de salud  Valor de la cotización de salud  N 3 
+148 Monto de cotización seguro de cesantía  Valor de la cotización del seguro de cesantía  N 3 
+149 Monto subsidio a pagar  Valor del subsidio a pagar  N 3 
+150 Fecha inicio de liquidación  Fecha de inicio del periodo a liquidar  N 3 
+151 Fecha termino de liquidación  Fecha de termino del periodo a liquidar  N 3 
+152 Fecha probable de pago  Fecha probable del pago  N 3 
+153 Número de días de subsidio a pagar  Número de días de subsidio a pagar  N 3 
+154 Número de días de cotización a pagar.  Número de días de cotización a pagar  N 3 
+155 Tipo de liquidación CCAF  Atributo para indicar el tipo de liquidación  N 3 
+156 Evento de liquidación CCAF  Atributo para indicar el tipo de pago de la 
+liquidación.  N 3 
+ 
+  D.F FIRMA DEL MEDICO AUTORIZADO POR EL SERVICIO DE SALUD O ISAPRE  
+# GLOSA  DESCRIPCION  TAG  TIPO  VALIDACION  I O 
+157 Firma Entidad Pagadora  Datos Zona D cifrados con llave privada del 
+operador  <firma>  CTFirma    N 1 
+ 
+ 

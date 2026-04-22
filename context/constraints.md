@@ -1,0 +1,3 @@
+- Docker mandatory
+- Kubernetes compatible
+- Cloud‑agnostic core

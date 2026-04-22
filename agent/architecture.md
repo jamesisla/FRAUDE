@@ -1,0 +1,3 @@
+- Stateless APIs
+- Portable SaaS + on‑prem
+- LLM abstraction required

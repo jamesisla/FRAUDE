@@ -1,0 +1,3 @@
+- All tests must pass
+- No constraint violations
+- Diffs must be reviewable

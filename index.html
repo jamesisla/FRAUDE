@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isapre | Sistema Antifraude v1.0</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="glass">
+    <div>
+      <h1>SISTEMA DE DETECCIÓN DE FRAUDE</h1>
+      <p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Análisis Estadístico Avanzado (Benford + Zipf + Entropy)</p>
+    </div>
+    <div style="text-align: right;">
+      <div id="last-update" style="font-size: 0.75rem; color: var(--text-secondary);">Actualizado: --:--</div>
+      <button id="refresh-btn" style="background: #3b82f6; border: none; color: white; padding: 0.5rem 1rem; border-radius: 6px; margin-top: 0.5rem; cursor: pointer; font-weight: 600;">Simular Nuevas Licencias</button>
+    </div>
+  </header>
+
+  <section class="stats-container">
+    <div class="stat-card glass">
+      <div style="font-size: 0.75rem; color: var(--text-secondary);">TOTAL LICENCIAS</div>
+      <div class="stat-value" id="stat-total">0</div>
+    </div>
+    <div class="stat-card glass border-safety">
+      <div style="font-size: 0.75rem; color: #10b981;">PASE AUTOMÁTICO</div>
+      <div class="stat-value score-low" id="stat-safe">0</div>
+    </div>
+    <div class="stat-card glass">
+      <div style="font-size: 0.75rem; color: #f59e0b;">REVISIÓN ADMIN</div>
+      <div class="stat-value score-mid" id="stat-review">0</div>
+    </div>
+    <div class="stat-card glass">
+      <div style="font-size: 0.75rem; color: #ef4444;">ALERTA DE FRAUDE</div>
+      <div class="stat-value score-high" id="stat-fraud">0</div>
+    </div>
+  </section>
+
+  <main class="trays">
+    <!-- Tray: Low Risk -->
+    <div class="tray glass safe">
+      <div class="tray-header">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></svg>
+        <span>BAJO RIESGO</span>
+      </div>
+      <div class="license-list" id="list-safe"></div>
+    </div>
+
+    <!-- Tray: Medium Risk -->
+    <div class="tray glass warning">
+      <div class="tray-header">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.308.533.19 0 .452-.088.646-.226l.112-.125c.115-.15.429-.533.429-.533l.23-.29c.045-.065.045-.14 0-.205l-.125-.175c-.045-.06-.115-.09-.175-.09h-.125c-.19 0-.312.062-.312.181 0 .034.004.068.012.1l1 4.71c.07.337-.028.533-.308.533-.19 0-.452-.088-.646-.226l-.112-.125c-.115-.15-.429-.533-.429-.533l-.23-.29c-.044-.067-.044-.141 0-.206l.125-.174c.044-.06.115-.091.175-.091h.125c.19 0 .312.061.312.18 0 .034-.004.067-.012.102l1 4.71zM8 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+        <span>REVISIÓN MEDIA</span>
+      </div>
+      <div class="license-list" id="list-review"></div>
+    </div>
+
+    <!-- Tray: High Risk -->
+    <div class="tray glass danger">
+      <div class="tray-header">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/><path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/></svg>
+        <span>ALTA PROBABILIDAD</span>
+      </div>
+      <div class="license-list" id="list-fraud"></div>
+    </div>
+  </main>
+
+  <div class="backdrop" id="backdrop">
+    <div class="modal glass">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <h2 id="modal-id">---</h2>
+      <hr style="margin: 1rem 0; border: none; border-top: 1px solid var(--border-glass);">
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script type="module" src="src/components/dashboard.js"></script>
+</body>
+</html>
